@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Typescript </title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<section id="connexion" class="section"> 
+    <div class="div" id="form">
+        <form id="conn">
+            <h1> Identification </h1>
+            <label> Identifiant </label><br>
+        <input type="text" name="name" id="name" placeholder="name" value="florence" /><br>
+        <label> Password </label><br>
+        <input type="text" name="password" id="password" placeholder="password" value="florence"> <br><br>
+        <input type="submit" value="submit">
+        </form>
+    </div>
+
+</section>
+<section class="section" id="secat" >
+    <div class="div" id="categorie">
+    <h1> Categorie</h1>
+
+</section>
+<section class="section" id="secprod" >
+    <div class="div" id="product">
+   
+        
+        <div id="vin"></div>
+    </div>
+    </section>
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+        System.import('main')
+          .catch(function(err){ console.error(err); });
+    </script>
+</body>
+
+</html>
